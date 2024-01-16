@@ -13,7 +13,7 @@ export class SumProfit extends Transform {
   }
 
   _flush(callback) {
-    this.push(this.total.toString());
+    this.push(`Total Profit: $${this.total.toString()}\n`);
     callback();
   }
 }
