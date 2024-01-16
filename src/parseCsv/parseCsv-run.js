@@ -5,7 +5,7 @@ import { FilterByCountry } from './filter-by-country.js';
 import { transform } from 'stream-transform';
 
 const filterByCountry = new FilterByCountry('Italy');
-//const sumProfit = new SumProfit();
+const sumProfit = new SumProfit();
 const parser = parse({
   columns: true,
 });
@@ -13,4 +13,5 @@ const parser = parse({
 fs.createReadStream('data.csv')
   .pipe(parser)
   .pipe(filterByCountry)
+  .pipe(sumProfit)
   .pipe(process.stdout);

@@ -9,7 +9,7 @@ export class FilterByCountry extends Transform {
 
   _transform(record, enc, cb) {
     if (record.country === this.country) {
-      this.push(JSON.stringify(record));
+      this.push(record);
     }
     cb();
   }
