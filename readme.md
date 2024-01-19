@@ -7,3 +7,4 @@ The exerices are based on The great book **Node.js Design patterns** along with 
 
 - Csv Parser: Parse csv file, filter data and do some calculation
 - String Replacement: Parse The input string, look for the target string and repalce it with the approriate string.
+- File Uploader that will read, compress and upload a file
